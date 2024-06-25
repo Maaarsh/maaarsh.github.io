@@ -4,9 +4,9 @@ My personal website to display info, projects, and whatever else I want.
 
 ## Ideas for site:
 
-~~- Social media links~~
-~~- About me~~
-~~- Contact info~~
+- ~~Social media links~~
+- ~~About me~~
+- ~~Contact info~~
 - Showcase of project(s)
 - Typing game that displays my most recent, highest, and average WPM
   - Allow vistors of my site to play and try to beat my WPM
