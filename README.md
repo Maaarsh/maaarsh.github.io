@@ -21,3 +21,4 @@ My personal website to display info, projects, and whatever else I want.
   - Last played game
     - And number of hours played
     - And when played last
+- Add secret button on Stan's nose/name tag to play SpiderStan.mp4
