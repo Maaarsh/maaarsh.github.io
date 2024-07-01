@@ -2,6 +2,8 @@
 
 My personal website to display info, projects, and whatever else I want.
 
+https://maaarsh.github.io/
+
 ## Ideas for site:
 
 - ~~Social media links~~
