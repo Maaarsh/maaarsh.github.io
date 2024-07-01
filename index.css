@@ -25,6 +25,11 @@ div.socials {
   text-align: center;
 }
 
-div.email {
+form {
   text-align: center;
+}
+
+.submit {
+  height: 50px;
+  width: 200px;
 }
