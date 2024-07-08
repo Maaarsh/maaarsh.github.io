@@ -33,3 +33,10 @@ form {
   height: 50px;
   width: 200px;
 }
+
+div.lightModeButt{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
