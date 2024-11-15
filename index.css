@@ -22,11 +22,14 @@ div.aboutMe {
 }
 
 div.socials {
-  text-align: center;
+  margin-top: -75px;
+  margin-left: 200px;
+  /* text-align: center; */
 }
 
 form {
-  text-align: center;
+
+  /* text-align: center; */
 }
 
 .submit {
@@ -39,4 +42,109 @@ div.lightModeButt{
   top: 0;
   right: 0;
   padding: 10px;
+}
+
+#about{
+  padding: 80px 0;
+  /* color: #ababab; */
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.aboutCol1{
+  flex-basis: 35%;
+}
+
+.aboutCol1 img{
+  margin-top: 80px;
+}
+
+.aboutCol1 span img{
+  /* width: 100%; */
+  border-radius: 15px;
+  margin-top: 0px;
+}
+
+.aboutCol2{
+  flex-basis: 65%;
+  /* margin-left: -35px; */
+}
+
+.subTitle{
+  margin-top: 5px;
+  /* margin-left: -35px; */
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.aboutText {
+  margin-top: -20px;
+  /* margin-left: -35px; */
+  max-width: 600px; /* Adjust the value as needed */
+  /* margin: 0 auto; Center the text */
+  text-align: left; /* Optional: Adjust text alignment */
+}
+
+.tabTitles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tabLinks{
+  margin-right: 50px;
+  font-size: 18x;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tabLinks::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #007bff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.tabLinks.activeLink::after{
+  width: 50%;
+}
+
+.tabContents ul{
+  padding-left: 0px;
+  font-size: 18px;
+
+}
+
+.tabContents ul li{
+  list-style: none;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.tabContents ul li span{
+  color: #66ccff;
+  font-size: 20px;
+  font-weight: 800;
+
+}
+
+.tabContents ul li time{
+  font-size: 15px;
+  font-weight: 10;
+}
+
+.tabContents{
+  display: none;
+}
+
+.tabContents.activeTab{
+  display: block;
 }
