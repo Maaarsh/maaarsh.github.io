@@ -30,7 +30,7 @@
         </div>
         <div class="aboutCol2">
           <h1 class="subTitle">About Me</h1>
-          <p class="aboutText">Hi, my name is Marshall Toro, I made this website to display my work and contact information. If you have any questions you can email me through the form below.</p>
+          <p class="aboutText">Hi, my name is Marshall Toro, I made this website to display my work and contact information.</p>
           <div class="tabTitles">
             <p class="tabLinks activeLink" onclick="openTab('skills')">Skills</p>
             <p class="tabLinks" onclick="openTab('experience')">Experience</p>
@@ -62,6 +62,19 @@
             </ul>
           </div>
         </div>
+        <div class="contactCol">
+          <h1 class="subTitle">Contact Me</h1>
+          <form action="https://formsubmit.co/marshallstoro@gmail.com" method="POST">
+            <input type="hidden" name="_template" value="box">
+            <input type="text" name="Name" required placeholder="Your name" size="50" class="inputField">
+            <br>
+            <input type="email" name="Email" required placeholder="Your email address" size="50" class="inputField">
+            <br>
+            <textarea id="message" name="Message" required rows="20" cols="50" placeholder="Your message" class="inputField"></textarea>
+            <br>
+            <button type="submit" class="submit">Send</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -83,7 +96,7 @@
 
   <br>
 
-    <form action="https://formsubmit.co/marshallstoro@gmail.com" method="POST">
+    <!-- <form action="https://formsubmit.co/marshallstoro@gmail.com" method="POST">
       <input type="hidden" name="_template" value="box">
       <input type="text" name="Name" required placeholder="Your name" size="50">
       <br>
@@ -92,7 +105,7 @@
       <textarea id="message" name="Message" required rows="10" cols="50" placeholder="Your message"></textarea>
       <br>
       <button type="submit" class="submit">Send</button>
-    </form>
+    </form> -->
   <br>
 
   

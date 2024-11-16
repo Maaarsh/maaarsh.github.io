@@ -23,7 +23,9 @@ div.aboutMe {
 
 div.socials {
   margin-top: -75px;
-  margin-left: 200px;
+  /* margin-left: 100px; */
+  justify-content: center;
+  gap: 10px;
   /* text-align: center; */
 }
 
@@ -34,7 +36,13 @@ form {
 
 .submit {
   height: 50px;
-  width: 200px;
+  /* width: 200px; */
+  width: 150%;
+  max-width: 500px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  cursor: pointer;
+
 }
 
 div.lightModeButt{
@@ -42,6 +50,10 @@ div.lightModeButt{
   top: 0;
   right: 0;
   padding: 10px;
+}
+
+#lightButt {
+  cursor: pointer; /* Ensure the cursor changes to pointer (finger) */
 }
 
 #about{
@@ -56,7 +68,8 @@ div.lightModeButt{
 }
 
 .aboutCol1{
-  flex-basis: 35%;
+  flex-basis: 30%;
+  text-align: center;
 }
 
 .aboutCol1 img{
@@ -70,7 +83,7 @@ div.lightModeButt{
 }
 
 .aboutCol2{
-  flex-basis: 65%;
+  flex-basis: 35%; /* Adjust the value as needed */
   /* margin-left: -35px; */
 }
 
@@ -147,4 +160,15 @@ div.lightModeButt{
 
 .tabContents.activeTab{
   display: block;
+}
+
+.contactCol{
+  flex-basis: 30%; /* Adjust the value as needed */
+}
+
+.inputField {
+  width: 150%;
+  max-width: 500px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
 }
