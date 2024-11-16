@@ -14,35 +14,19 @@ body {
   margin-right: auto;
 }
 
-div.aboutMe {
-  a {
-    color: rgb(0, 90, 255);
-  }
-  text-align: center;
-}
-
 div.socials {
   margin-top: -75px;
-  /* margin-left: 100px; */
   justify-content: center;
   gap: 10px;
-  /* text-align: center; */
-}
-
-form {
-
-  /* text-align: center; */
 }
 
 .submit {
   height: 50px;
-  /* width: 200px; */
   width: 150%;
   max-width: 500px;
   box-sizing: border-box;
   margin-bottom: 5px;
   cursor: pointer;
-
 }
 
 div.lightModeButt{
@@ -53,12 +37,11 @@ div.lightModeButt{
 }
 
 #lightButt {
-  cursor: pointer; /* Ensure the cursor changes to pointer (finger) */
+  cursor: pointer; 
 }
 
 #about{
   padding: 80px 0;
-  /* color: #ababab; */
 }
 
 .row{
@@ -77,29 +60,24 @@ div.lightModeButt{
 }
 
 .aboutCol1 span img{
-  /* width: 100%; */
   border-radius: 15px;
   margin-top: 0px;
 }
 
 .aboutCol2{
-  flex-basis: 35%; /* Adjust the value as needed */
-  /* margin-left: -35px; */
+  flex-basis: 35%;
 }
 
 .subTitle{
   margin-top: 5px;
-  /* margin-left: -35px; */
   font-size: 60px;
   font-weight: 600;
 }
 
 .aboutText {
   margin-top: -20px;
-  /* margin-left: -35px; */
-  max-width: 600px; /* Adjust the value as needed */
-  /* margin: 0 auto; Center the text */
-  text-align: left; /* Optional: Adjust text alignment */
+  max-width: 600px;
+  text-align: left;
 }
 
 .tabTitles{
@@ -133,7 +111,6 @@ div.lightModeButt{
 .tabContents ul{
   padding-left: 0px;
   font-size: 18px;
-
 }
 
 .tabContents ul li{
@@ -146,7 +123,6 @@ div.lightModeButt{
   color: #66ccff;
   font-size: 20px;
   font-weight: 800;
-
 }
 
 .tabContents ul li time{
@@ -163,7 +139,7 @@ div.lightModeButt{
 }
 
 .contactCol{
-  flex-basis: 30%; /* Adjust the value as needed */
+  flex-basis: 30%;
 }
 
 .inputField {
