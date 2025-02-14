@@ -9,6 +9,7 @@ https://maaarsh.github.io/
 - ~~Social media links~~
 - ~~About me~~
 - ~~Contact info~~
+- Interests tab
 - Showcase of project(s)
 - Typing game that displays my most recent, highest, and average WPM
   - Allow vistors of my site to play and try to beat my WPM
