@@ -6,57 +6,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marshall's Website</title>
   <h1>Marshall's Website</h1>
-  
 </head>
 <body>
-  <div class="container">
-    <div class="lightModeButt">
-      <input onclick="toggleLight()" type="button" value="Light Mode" id="lightButt">
-    </div>
-    <div class="aboutMe">
-      <img src="marshall.jpeg" alt="Photo of me and my dog, Stan." class="center">
-      <!-- <h3>About Me:</h3> -->
-      <!-- <p>Hi, my name is Marshall Toro. I am currently enrolled as a computer science major at California State University Channel Islands. I made this website to display my work and contact information. If you have any questions for me, feel free to email me with either the link or form below.</p> -->
-      <!-- <p>Hi, my name is Marshall Toro. I am currently enrolled as a computer science major at California State University Channel Islands. I made this website to display my work and contact information. If you have any questions you can email me through the form below.</p> -->
 
-      <p>Hi, my name is Marshall Toro, I made this website to display my work and contact information. If you have any questions you can email me through the form below.</p>
-      <!-- <a href="mailto:marshallstoro@gmail.com" target="_blank">Email: marshallstoro@gmail.com</a> -->
-    </div>
-    <!-- <br> -->
-
-      <form action="https://formsubmit.co/marshallstoro@gmail.com" method="POST" autocomplete="on">
-        <input type="hidden" name="_template" value="box">
-        <input type="text" name="Name" required placeholder="Your name" size="50">
-        <br>
-        <br>
-        <input type="email" name="Email" required placeholder="Your email address" size="50">
-        <br>
-        <br>
-        <textarea id="message" name="Message" required rows="10" cols="40" placeholder="Your message"></textarea>
-        <br>
-        <button type="submit" class="submit">Send</button>
-      </form>
-    <br>
-
-    <div class="socials">
-      <h3>Social Media:</h3>
-      <a href="https://youtube.com/@marsh03?sub_confirmation=1" target="_blank"><img src="YTLogo.png" height="35" alt="YouTube"></a>
-      <a href="https://www.twitch.tv/marsh_live" target="_blank"><img src="twitchLogo.png" height="35" alt="Twitch"></a>
-      <a href="https://x.com/marshtweets?s=21&t=t_MiwBoQFi26wfnnsN6m8w" target="_blank"><img src="twitterLogo.png" height="35" alt="Twitter"></a>
-      <a href="https://github.com/Maaarsh" target="_blank"><img src="githubLogo.png" height="35" alt="Github"></a>
-      <a href="https://open.spotify.com/user/marshallstoro?si=9oKFjx2VSjWcyU9q7xPTGw" target="_blank"><img src="spotifyLogo.png" height="35" alt="Spotify"></a>
-    </div>
-
-    <script>
-      function toggleLight() {
-        var element = document.body;
-        element.classList.toggle('lightMode');
-        var elem = document.getElementById("lightButt");
-
-        if (elem.value == "Light Mode") elem.value = "Dark Mode";
-        else elem.value = "Light Mode"
-      }
-    </script>
+  <!-- Button to switch between light and dark mode -->
+  <div class="lightModeButt">
+    <input onclick="toggleLight()" type="button" value="Light Mode" id="lightButt">
   </div>
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="aboutCol1">
+          <span><img src="marshall.jpeg" height="500" alt="Photo me and my dog, Stan." class="center"></span>
+
+          <!-- Social media links -->
+          <div class="socials">
+            <!-- <a href="https://youtube.com/@marsh03?sub_confirmation=1" target="_blank"><img src="YTLogo.png" height="35" alt="YouTube"></a> -->
+            <!-- <a href="https://www.twitch.tv/marsh_live" target="_blank"><img src="twitchLogo.png" height="35" alt="Twitch"></a> -->
+            <a href="https://github.com/Maaarsh" target="_blank"><img src="githubLogo.png" height="35" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/marshall-toro-b60776324/?trk=opento_sprofile_topcard" target="_blank"><img src="linkedinLogo.png" height="35" alt="LinkedIn"></a>
+            <a href="https://open.spotify.com/user/marshallstoro?si=9oKFjx2VSjWcyU9q7xPTGw" target="_blank"><img src="spotifyLogo.png" height="35" alt="Spotify"></a>
+            <!-- <a href="https://x.com/marshtweets?s=21&t=t_MiwBoQFi26wfnnsN6m8w" target="_blank"><img src="twitterLogo.png" height="35" alt="Twitter"></a> -->
+          </div>
+        </div>
+
+        <div class="aboutCol2">
+          <!-- About Me -->
+          <h1 class="subTitle">About Me</h1>
+          <p class="aboutText">Hi, my name is Marshall Toro, I made this website to display my work and contact information.</p>
+          <div class="tabTitles">
+            <p class="tabLinks activeLink" onclick="openTab('skills')">Skills</p>
+            <p class="tabLinks" onclick="openTab('experience')">Experience</p>
+            <p class="tabLinks" onclick="openTab('education')">Education</p>
+          </div>
+
+          <!-- Skills tab -->
+          <div class="tabContents activeTab" id="skills">
+            <ul>
+              <li><span>Web Development</span></li>
+              <br>
+              <li><span>Python</span></li>
+              <br>
+              <li><span>Java</span></li>
+              <br>
+              <li><span>C++</span></li>
+              <br>
+              <li><span>Unity</span></li>
+              <br>
+              <li><span>Problem Solving</span></li>
+              <br>
+              <li><span>Teamwork</span></li>
+            </ul>
+          </div>
+
+          <!-- Experience tab -->
+          <div class="tabContents" id="experience">
+            <ul>
+              <li><span>Aelid Development</span><br>Internship<br><time>May 2023 - Present</time></li>
+              <br>
+              <li><span>Association for Computing Machinery at San Francisco State University</span><br>Club Member<br><time>September 2024 - Present</time></li>
+              <br>
+              <li><span>Conservation Robotics and Engineering Club at California State Channel Islands</span><br>Club Member<br><time>September 2021 - May 2024</time></li>
+            </ul>
+          </div>
+
+          <!-- Education tab -->
+          <div class="tabContents" id="education">
+            <ul>
+              <li><span>San Francisco State University</span><br>Computer Science Major<br><time>August 2024 - Spring 2026 (Expected)</time></li>
+              <br>
+              <li><span>California State Channel Islands</span><br>Computer Science Major<br><time>August 2021 - May 2023</time></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contactCol">
+          <!-- Email form -->
+          <h1 class="subTitle">Contact Me</h1>
+          <form action="https://formsubmit.co/marshallstoro@gmail.com" method="POST">
+            <input type="hidden" name="_template" value="box">
+            <input type="text" name="Name" required placeholder="Your name" size="50" class="inputField">
+            <br>
+            <input type="email" name="Email" required placeholder="Your email address" size="50" class="inputField">
+            <br>
+            <textarea id="message" name="Message" required rows="20" cols="50" placeholder="Your message" class="inputField"></textarea>
+            <br>
+            <button type="submit" class="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for light/dark mode
+    function toggleLight() {
+      var element = document.body;
+      element.classList.toggle('lightMode');
+      var elem = document.getElementById("lightButt");
+
+      if (elem.value == "Light Mode") elem.value = "Dark Mode";
+      else elem.value = "Light Mode"
+    }
+
+    // JavaScript for tabs
+    var tabLinks = document.getElementsByClassName("tabLinks");
+    var tabContents = document.getElementsByClassName("tabContents");
+
+    function openTab(tabName) {
+      for (tabLink of tabLinks) {
+        tabLink.classList.remove("activeLink");
+      }
+      for (tabContent of tabContents) {
+        tabContent.classList.remove("activeTab");
+      }
+      event.currentTarget.classList.add("activeLink");
+      document.getElementById(tabName).classList.add("activeTab");
+    }
+  </script>
 </body>
 </html>

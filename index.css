@@ -12,51 +12,139 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-} */
-
-/* 
-div.aboutMe {
-  a {
-    color: rgb(0, 90, 255);
-  }
-  text-align: center;
 }
-
 
 div.socials {
-  text-align: center;
+  margin-top: -75px;
+  justify-content: center;
+  gap: 10px;
 }
-
-
-form {
-  text-align: center;
-} */
 
 .submit {
   height: 50px;
-  width: 200px;
+  width: 100%; /* Adjusted to fit within the container */
+  max-width: 500px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
-div.lightModeButt{
+div.lightModeButt {
   position: absolute;
   top: 0;
   right: 0;
   padding: 10px;
 }
 
-.center {
-  max-width: 40%;
-  /* height: 40%; */
+#lightButt {
+  cursor: pointer; 
 }
 
-/* form {
-  max-width: 100%;
-} */
+#about {
+  padding: 80px 0;
+}
 
-.container {
+.row {
   display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.aboutCol1 {
+  flex-basis: 30%;
   text-align: center;
+}
+
+.aboutCol1 img {
+  margin-top: 80px;
+}
+
+.aboutCol1 span img {
+  border-radius: 15px;
+  margin-top: 0px;
+}
+
+.aboutCol2 {
+  flex-basis: 35%;
+}
+
+.subTitle {
+  margin-top: 5px;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.aboutText {
+  margin-top: -20px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.tabTitles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tabLinks {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tabLinks::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #007bff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.tabLinks.activeLink::after {
+  width: 50%;
+}
+
+.tabContents ul {
+  padding-left: 0px;
+  font-size: 18px;
+}
+
+.tabContents ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.tabContents ul li span {
+  color: #66ccff;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.tabContents ul li time {
+  font-size: 15px;
+  font-weight: 10;
+}
+
+.tabContents {
+  display: none;
+}
+
+.tabContents.activeTab {
+  display: block;
+}
+
+.contactCol {
+  flex-basis: 30%;
+}
+
+.inputField {
+  width: 100%; /* Adjusted to fit within the container */
+  max-width: 500px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
 }
