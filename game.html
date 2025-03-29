@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Individual Assignment 3: JavaScript Game
+CSC 317 Section 1
+Name: Marshall Toro
+Student ID: 924086043
+Github Username: Maaarsh
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <img src="rectangleFight.png" alt="Toro Game Logo" style="width: 300px; height: auto;">
+  <style>
+    canvas {
+      border: 1px solid black;
+      background-color: #f1f1f1;
+    }
+  </style>
+  <title>Rectangle Fight: Red Vs. Green</title>
+  <input type="button" href="index.html" value="home" class="homeButt" onclick="window.location.href='index.html'">
+</head>
+<body onload="startGame()">
+  <script src="game.js"></script>
+  <p id="howToPlay" style="font-family: Arial, sans-serif; font-size: 16px;">
+  How to Play:<br>
+  Press any key to start <br>
+  W: Jump<br>
+  A: Move Left<br>
+  S: Fast Fall<br>
+  D: Move Right<br>
+  Shift: Crouch<br>
+  Left Arrow: Left Attack<br>
+  Right Arrow: Right Attack<br>
+  Space: Block<br>
+  P: Restart Game
+  </p>
+</body>
+</html>
