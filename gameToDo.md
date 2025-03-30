@@ -25,9 +25,9 @@ To do/Ideas:
 
 * Combat
   * ~~Shift to crouch~~
-  * ~~Left arrow to left punch~~
-  * ~~Right arrow to right punch~~
-  * Up arrow to up punch
+  * ~~J to left punch~~
+  * ~~L to right punch~~
+  * I to up punch
   * ~~Player health bar~~
   * ~~Space bar to block~~
 
@@ -69,3 +69,9 @@ Bugs:
 
 * If player holds any action button (besides left/right attack) and then clicks to another tab, player character will remain doing the corresponding action until that button is pressed again
   * Should be: Stop all actions and/or pause game (not yet a feature) when player tabs out
+
+* Player is unable to attack at all after blocking
+  * Should be: Player cannot attack during blocking but can afterward
+
+* Player can hold down attack key to repeatedly attack
+  * Should be: Player should have to press the attack for each attack

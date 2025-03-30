@@ -150,8 +150,8 @@ var myGameArea = {
 
       // Prevents the player from moving off the left side of the screen
       this.hitLeft = function() {
-        if (this.x < screenLeft) {
-            this.x = screenLeft;
+        if (this.x < 0) {
+            this.x = 0;
         }
       }
 
@@ -247,11 +247,11 @@ var myGameArea = {
         player.height = 50;
       }
 
-      // Right arrow key (right attack)
-      if (myGameArea.keys && myGameArea.keys[39] && canAttack) {
+      // L key (right attack)
+      if (myGameArea.keys && myGameArea.keys[76] && canAttack) {
         for (let i = 0; i < enemy.length; i++) {
           canAttack = false;
-          fist = new component(50, 10, "rgb(255, 0, 0)", player.x, player.y + player.height / 3);
+          fist = new component(30, 10, "rgb(255, 0, 0)", player.x + player.width, player.y + player.height / 3);
           if (isCrouching == true && player.jumping == false) {
             fist.y = player.y - 10;
           }
@@ -271,17 +271,20 @@ var myGameArea = {
             break;
           }
         }
+        setTimeout(() => {
+          canAttack = true;
+        }, 200); // Adjust delay as needed
       }
 
       if (fist) {
         fist.update();
       }
 
-      // Left arrow key (left attack)
-      if (myGameArea.keys && myGameArea.keys[37] && canAttack) {
+      // J key (left attack)
+      if (myGameArea.keys && myGameArea.keys[74] && canAttack) {
         for (let i = 0; i < enemy.length; i++) {
           canAttack = false;
-          fist = new component(50, 10, "rgb(255, 0, 0)", player.x - player.width/1.5, player.y + player.height / 3);
+          fist = new component(30, 10, "rgb(255, 0, 0)", player.x - 30, player.y + player.height / 3);
           if (isCrouching == true && player.jumping == false) {
             fist.y = player.y - 10;
           }
@@ -301,17 +304,22 @@ var myGameArea = {
             break;
           }
         }
+        setTimeout(() => {
+          canAttack = true;
+        }, 200); // Adjust delay as needed
       }
 
-      // Up arrow key (up attack)
+      // I key (up attack)
 
-      // Down arrow key (down attack)
+      // K key (down attack)
 
       // Space key (block)
+      /*
       if (myGameArea.keys && myGameArea.keys[32]) {
-        player.color = "rgb(0, 0, 255)";            setTimeout(() => {
+        player.color = "rgb(0, 0, 255)";
+        setTimeout(() => {
           player.color = "rgb(255, 0, 0)";
-        }, 50);
+        }, 10);
         player.speedX = player.speedX / 2;
         isBlocking = true;
         canAttack = false;
@@ -320,6 +328,7 @@ var myGameArea = {
         isBlocking = false;
         // console.log('Not blocking');
       }
+      */
 
       /* ========== ENEMIES ========== */
       // Check for collisions with enemies
